@@ -75,5 +75,14 @@ button.addEventListener("click", () => {
     yearText.innerHTML = ageYear;
     monthText.innerHTML = ageMonth;
     dayText.innerHTML = ageDay;
+    input.forEach((element) => {
+      element.style.borderColor = "hsl(0, 1%, 44%)";
+    });
+    header.forEach((element) => {
+      element.style.color = "hsl(0, 1%, 44%)";
+    });
+    errorText[0].innerHTML = "";
+    errorText[1].innerHTML = "";
+    errorText[2].innerHTML = "";
   }
 });
