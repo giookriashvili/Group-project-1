@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <input type="text" name="" id="year" />
-    <input type="text" name="" id="month" />
-    <input type="text" name="" id="day" />
-    <button type="submit" id="submit">calculate</button>
-    <br />
-    <span id="yearText">00</span><span>years</span> <br />
-    <span id="monthText">00</span><span>months</span><br />
-    <span id="dayText">00</span><span>days</span>
-
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container" role="main">
+    <div class="content">
+      <div class="input">
+        <div>
+          <h6 class="header">Day</h6>
+          <input type="text" placeholder="DD" id="day" class="input"/>
+          <p class="error"></p>
+        </div>
+        <div>
+          <h6 class="header">Month</h6>
+          <input type="text" placeholder="MM" id="month" class="input"/>
+          <p class="error"></p>
+        </div>
+        <div>
+          <h6 class="header">Year</h6>
+          <input type="text" placeholder="YYYY" id="year" class="input"/>
+          <p class="error"></p>
+        </div>
+      </div>
+      <hr />
+      <button id="calculateBtn">
+        <img src="./assets/images/icon-arrow.svg" alt="" />
+      </button>
+      <div class="result">
+        <h1><span id="yearText">--</span> years</h1>
+        <h1><span id="monthText">--</span> months</h1>
+        <h1><span id="dayText">--</span> days</h1>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
