@@ -170,6 +170,18 @@ p.error {
   }
 
   .result h1 {
-    font-size: 60px;
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 400px){
+  .result h1 {
+    font-size: 40px;
+  }
+
+  input {
+    width: 60px;
+    font-size: 12px;
+    margin-right: 10px;
   }
 }
