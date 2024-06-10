@@ -113,3 +113,63 @@ p.error {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* Mobile-responsive */
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 650px;
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom-right-radius: 25%;
+  }
+
+  .input {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .input div {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  input {
+    width: 80px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  hr {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  button {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+  }
+
+  .result {
+    text-align: left;
+    margin-top: 50px;
+  }
+
+  .result h1 {
+    font-size: 60px;
+  }
+}
